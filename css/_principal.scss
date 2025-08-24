@@ -1,0 +1,58 @@
+body {
+  background-color: $clr-light;
+  color: $clr-dark;
+  min-height: 100vh;
+  font-family: $font-main;
+}
+
+a {
+  color: $clr-dark;
+  text-decoration: none;
+}
+
+header {
+  background-color: $clr-main;
+  display: flex;
+  justify-content: space-between;
+  padding: .5em 2em;
+  box-shadow: $box-shadow;
+
+  .titulo {
+    font-size: 2.5rem;
+  }
+}
+
+main {
+  padding: 2rem;
+}
+
+.main-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.grid-item {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  box-shadow: $box-shadow;
+  border-radius: .75em;
+  padding: .75em 1em;
+  transition: all .5s;
+
+  p {
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  i {
+    font-size: 1.1em;
+  }
+
+  &:hover {
+    background-color: $clr-main;
+    transform: scale(1.05);
+    box-shadow: $box-shadow-expand;
+  }
+}
