@@ -56,3 +56,62 @@ main {
     box-shadow: $box-shadow-expand;
   }
 }
+
+.navbar {
+  background-color: $clr-main !important;
+  font-family: $font-main;
+  box-shadow: $box-shadow;
+
+  .navbar-brand,
+  .nav-link,
+  .navbar-text {
+    color: $clr-dark !important;
+    font-weight: 500;
+  }
+
+  .nav-link.active,
+  .nav-link:focus,
+  .nav-link:hover {
+    color: darken($clr-dark, 5%) !important;
+  }
+
+  .navbar-toggler {
+    border-color: $clr-dark;
+  }
+
+  .navbar-toggler-icon {
+    background-image: none;
+    color: $clr-dark;
+  }
+}
+
+footer {
+  background-color: $clr-main;
+  color: $clr-dark;
+  font-family: $font-main;
+  text-align: center;
+  padding: 1.5em 0 1em 0;
+  margin-top: 2em;
+  box-shadow: $box-shadow;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .footer-social {
+    margin-top: 0.5em;
+  }
+
+  .footer-social a {
+    color: $clr-dark;
+    margin: 0 0.5em;
+    font-size: 1.5em;
+    transition: color 0.3s;
+    &:hover {
+      color: darken($clr-dark, 5%);
+    }
+  }
+}
