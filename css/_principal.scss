@@ -3,6 +3,7 @@ body {
   color: $clr-dark;
   min-height: 100vh;
   font-family: $font-main;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 a {
@@ -112,6 +113,54 @@ footer {
     transition: color 0.3s;
     &:hover {
       color: darken($clr-dark, 5%);
+    }
+  }
+}
+
+.dark-mode {
+  background-color: $clr-dark-bg;
+  color: $clr-dark-text;
+
+  header, .navbar, footer {
+    background-color: $clr-dark-main !important;
+    color: $clr-dark-bg !important;
+    box-shadow: $clr-dark-shadow;
+  }
+
+  .titulo, .navbar .navbar-brand, .navbar .nav-link, .navbar .navbar-text, footer .footer-content, footer .footer-social a {
+    color: $clr-dark-bg !important;
+  }
+
+  a {
+    color: $clr-dark-text;
+  }
+
+  .grid-item {
+    background-color: $clr-dark-bg;
+    color: $clr-dark-text;
+    box-shadow: $clr-dark-shadow;
+
+    &:hover {
+      background-color: $clr-dark-main;
+      color: $clr-dark-bg;
+      box-shadow: $clr-dark-shadow-expand;
+    }
+
+    i {
+      color: $clr-dark-text;
+    }
+  }
+
+  .navbar .navbar-toggler,
+  .navbar .navbar-toggler-icon {
+    border-color: $clr-dark-bg;
+    color: $clr-dark-bg;
+  }
+
+  footer .footer-social a {
+    color: $clr-dark-bg;
+    &:hover {
+      color: $clr-dark-text;
     }
   }
 }
